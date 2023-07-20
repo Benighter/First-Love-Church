@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Love Church New Believers</title>
+  <link rel="icon" href="Logo.jpg">
+
+  <style>
+    body {
+      background-image: url(logo.jpg);
+      background-position: center;
+      background-size: cover;
+      background-position-y: -390px;
+      margin: 0;
+    }
+    
+    .card {
+      width: 100%;
+      max-width: 200px;
+      height: 250px;
+      display: inline-block;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      color: rgb(255, 0, 234);
+      cursor: pointer;
+    }
+    
+    .card:hover {
+      transform: scale(1.1);
+    }
+    
+    .card:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      background-color: transparent;
+      border-radius: 20px;
+      z-index: -1;
+      transform: scale(1.5);
+      transition: 0.3s;
+    }
+    
+    .card:hover:before {
+      transform: scale(1);
+    }
+    
+    img {
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    h1 {
+      font-size: 50px;
+      border-bottom: 5px solid white;
+      margin-bottom: 50px;
+      color: #b007ff;
+      text-shadow: 1px 1px 0 #7289da, 2px 2px 0 #5b6ddd, 3px 3px 0 #7289da;
+    }
+
+    @media screen and (min-width: 600px) {
+      /* Adjust the layout for larger screens */
+      .card {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; margin-top: 50px;">FIRST LOVE CHURCH NEW BELIEVERS</h1>
+
+  <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+    <div class="card">
+      <h2>APK</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdellqRfHEN10Iq76E_620RGSl8um_Ra49981GQ0yL6uEd_SA/viewform" target="_blank">
+        <img src="logo.jpg" alt="APK Image">
+      </a>
+    </div>
+
+    <div class="card" id="apbCard" onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeI-UoZimSUNZpn7pEaAceYwty_jyDir0amlcA4yxnq66B2fQ/viewform')">
+      <h2>APB</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeI-UoZimSUNZpn7pEaAceYwty_jyDir0amlcA4yxnq66B2fQ/viewform" target="_blank">
+        <img src="logo.jpg" alt="APB Image">
+      </a>
+    </div>
+
+    <div class="card" id="witsCard" onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSfJWW4XOGCEnJYq9BFLIjCjpNEJFBlYP06lYJ42rwMCaKmS0Q/viewform')">
+      <h2>WITS</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJWW4XOGCEnJYq9BFLIjCjpNEJFBlYP06lYJ42rwMCaKmS0Q/viewform" target="_blank">
+        <img src="logo.jpg" alt="WITS Image">
+      </a>
+    </div>
+
+    <div class="card" id="dfcCard" onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSfVIhOaTOOcdokZfXPzBNS6elltQftWeAkDhXA_mGWeRCL5Pg/viewform')">
+      <h2>DFC</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVIhOaTOOcdokZfXPzBNS6elltQftWeAkDhXA_mGWeRCL5Pg/viewform" target="_blank">
+        <img src="Logo.jpg" alt="DFC Image">
+      </a>
+    </div>
+
+    <div class="card" id="swcCard" onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSeA23Vcd34mOW_SqtQ3FwcmE2vKH6F9NbL9pSzq1Q9mlwx9Zg/viewform')">
+      <h2>SWC</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA23Vcd34mOW_SqtQ3FwcmE2vKH6F9NbL9pSzq1Q9mlwx9Zg/viewform" target="_blank">
+        <img src="Logo.jpg" alt="SWC Image">
+      </a>
+    </div>
+
+    <div class="card" id="monashCard" onclick="redirectToLink('https://docs.google.com/forms/d/e/1FAIpQLSehyZK1PtOLd2hFmZ3G1b66V7guFfuKeH-TXRof01ZAiSY-cg/viewform')">
+      <h2>Monash</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehyZK1PtOLd2hFmZ3G1b66V7guFfuKeH-TXRof01ZAiSY-cg/viewform" target="_blank">
+        <img src="logo.jpg" alt="Monash">
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function redirectToLink(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</html>
