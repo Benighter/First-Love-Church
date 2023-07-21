@@ -1,10 +1,12 @@
-    body {
-      background-image: url(Logo.jpg);
-      background-position: center;
-      background-size: cover;
-      background-position-y: -390px;
-      margin: 0;
-    }
+body {
+  background-image: url(Logo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: -390px;
+  background-attachment: fixed;
+  margin: 0;
+}
+
     
     .card {
       width: 100%;
@@ -58,11 +60,4 @@
       margin-bottom: 50px;
       color: #b007ff;
       text-shadow: 1px 1px 0 #7289da, 2px 2px 0 #5b6ddd, 3px 3px 0 #7289da;
-    }
-
-    @media screen and (min-width: 600px) {
-      /* Adjust the layout for larger screens */
-      .card {
-        max-width: 300px;
-      }
     }
